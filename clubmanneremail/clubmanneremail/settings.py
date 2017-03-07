@@ -25,7 +25,7 @@ SECRET_KEY = 'tqxbgw!09s$+nc)*@5ds0r@z4g8d51aa@(gax9ox%iiklu9mrh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['clubmanner.com']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'clubmanneremail.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/andrewau/github/ClubManner-Email/clubmanneremail/templates'],
+        'DIRS': ['/home/ubuntu/ClubManner-Email/clubmanneremail/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
