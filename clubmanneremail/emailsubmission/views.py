@@ -16,8 +16,8 @@ def get_name(request):
             form.save()
             
             send_mail(
-                'Test Subject',
-                'Here is the message.',
+                'THIS IS A TEST',
+                'FYI: SINCE WE HAVE YET TO LAUNCH, YOUR INFO WILL BE DELETED DAILY AS WE CONTINUE TO BUILD OUT OUR SYSTEM',
                 'clubmannercanada@gmail.com',
                 [request.POST.get('email')],
                 fail_silently=False,
