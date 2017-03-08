@@ -9,6 +9,7 @@ class Emails(models.Model):
     first_name = models.CharField(max_length=50, blank=False, null=False, validators=[alphabetic])
     last_name = models.CharField(max_length=50, blank=False, null=False, validators=[alphabetic])
     email = models.EmailField(max_length=254, blank=False, null=False, unique=True)
+    agree_terms = models.BooleanField(required = True)
     
     class Meta:
         managed = True
