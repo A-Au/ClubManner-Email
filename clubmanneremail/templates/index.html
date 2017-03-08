@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>$4000 for the Super Suck</title>
+    <title>$4000+S&H for the Super Suck</title>
 </head>
 <body>
     <form action="" method="post">
-        {% csrf_token %}
-        {{ form }}
+        <table>
+            {% csrf_token %}
+            {{ form.as_table }}
+        </table>
         <input type="submit" value="SUBMIT">
     </form>
 </body>
