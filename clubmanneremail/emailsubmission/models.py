@@ -32,8 +32,8 @@ class EmailsForm(ModelForm):
             'email': _('Email')
         }"""
         widgets = {
-            'first_name': forms.TextInput(attrs={'class':'form-control'}),
-            'last_name': forms.TextInput(attrs={'class':'form-control'}),
-            'email': forms.TextInput(attrs={'class':'form-control'})
+            'first_name': forms.TextInput(attrs={'class':'form-control input-lg'}),
+            'last_name': forms.TextInput(attrs={'class':'form-control input-lg'}),
+            'email': forms.TextInput(attrs={'class':'form-control input-lg'})
         }
 
