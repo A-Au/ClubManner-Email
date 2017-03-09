@@ -13,8 +13,17 @@
         }
         .signup {
             width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
-
+        .container {
+            position: relative;
+        }
+        .form {
+            z-index: 100;
+            position: absolute;
+        }
     </style>
 </head>
 <body>
@@ -38,15 +47,17 @@
         </div>
     </nav>
 
-    <div>
-        <img class="signup" src="http://clubmanner.com/resources/images/bg.jpg">
-        <form action="" method="post">
-            <table>
-                {% csrf_token %}
-                {{ form.as_table }}
-            </table>
-            <input type="submit" value="SUBMIT">
-        </form>
+    <div class="container">
+            <img class="signup" src="http://clubmanner.com/resources/images/bg.jpg">
+        <div class="form">
+            <form action="" method="post">
+                <table>
+                    {% csrf_token %}
+                    {{ form.as_table }}
+                </table>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
     </div>
 
     <script src="http://clubmanner.com/resources/js/jquery-2.1.3.js"></script>
