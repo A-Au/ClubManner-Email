@@ -17,8 +17,17 @@ class Emails(models.Model):
 
 
 class EmailsForm(ModelForm):
-    agree_term = forms.BooleanField(required=True)
+    agree_term = forms.BooleanField(required=True, label='Agree to terms')
     class Meta:
         model = Emails
         fields = ['first_name', 'last_name', 'email' ]
-
+        labels = {
+            'first_name': _(''),
+            'last_name': _(''),
+            'email': _('')
+        }
+        help_texts = {
+            'first_name': _('First name'),
+            'last_name': _('Last name'),
+            'email': _('Email')
+        }
