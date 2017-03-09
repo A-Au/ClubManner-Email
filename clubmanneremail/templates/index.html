@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>$4000+S&H for the Super Suck</title>
+    <link rel="stylesheet" href="http://clubmanner.com/resources/css/bootstrap.min.css" type="text/css">
+
     <style type="text/css">
         body {
             background-image: url("http://clubmanner.com/resources/images/bg.jpg");
@@ -9,6 +11,29 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll">ClubM&auml;nner</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="#howitworks">How It Works</a></li>
+                    <li><a class="page-scroll" href="#lookbook">LookBook</a></li>
+                    <li><a class="pipe page-scroll" href="#blog">Blog</a></li>
+                    <li><a class="page-scroll" href="#login">Log In</a></li>
+                    <li><a class="page-scroll" href="#signup">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
     <form action="" method="post">
         <table>
             {% csrf_token %}
