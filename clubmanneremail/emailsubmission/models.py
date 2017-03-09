@@ -21,7 +21,7 @@ class EmailsForm(ModelForm):
     class Meta:
         model = Emails
         fields = ['first_name', 'last_name', 'email' ]
-        labels = {
+        """labels = {
             'first_name': _(''),
             'last_name': _(''),
             'email': _('')
@@ -30,4 +30,10 @@ class EmailsForm(ModelForm):
             'first_name': _('First name'),
             'last_name': _('Last name'),
             'email': _('Email')
+        }"""
+        widgets = {
+            'first_name': forms.TextInput(attrs={'class':'form-control'}),
+            'last_name': forms.TextInput(attrs={'class':'form-control'}),
+            'email': forms.TextInput(attrs={'class':'form-control'})
         }
+
