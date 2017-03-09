@@ -19,10 +19,11 @@
         }
         .container {
             background-image: url('http://clubmanner.com/resources/images/bg.jpg');
-            background-position: center;
+            background-position: top;
             background-size:cover;
             height:50vw;
             min-height: 800px;
+            min-width:100%;
         }
         .form {
             top: 50%;
@@ -59,7 +60,7 @@
                     {% csrf_token %}
                     {{ form.as_table }}
                 </table>
-                <input type="submit" value="SUBMIT">
+                <input class="btn btn-lg btn-default" type="submit" value="SUBMIT">
             </form>
         </div>
     </div>
