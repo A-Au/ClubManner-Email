@@ -18,7 +18,7 @@ from django.contrib import admin
 from emailsubmission import views
 
 urlpatterns = [
-    url(r'^about/' views.get_about)
+    url(r'^about/' views.get_about),
     url(r'^$', views.get_name),
     url(r'^admin/', admin.site.urls),
 ]
