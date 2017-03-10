@@ -32,3 +32,6 @@ def get_name(request):
         form = EmailsForm()
 
     return render(request, 'index.html', {'form': form})
+
+def get_about(request):
+    return render(request, 'about.html')
