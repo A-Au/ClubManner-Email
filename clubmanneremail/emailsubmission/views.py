@@ -35,3 +35,6 @@ def get_name(request):
 
 def get_about(request):
     return render(request, 'about.html')
+
+def get_thanks(request):
+    return render(request, 'thanks.html')

@@ -19,6 +19,7 @@ from emailsubmission import views
 
 urlpatterns = [
     url(r'^about/', views.get_about),
+    url(r'^thanks/', views.get_thanks),
     url(r'^$', views.get_name),
     url(r'^admin/', admin.site.urls),
 ]
