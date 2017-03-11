@@ -1,63 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>$4000+S&H for the Super Suck</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="http://clubmanner.com/resources/css/bootstrap.min.css" type="text/css">
-
     <style type="text/css">
-        body {
-            background-color: #000000; 
-            margin-top: 50px;
-        }
-        .signup {
-            width: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        .container {
-            background-image: url('http://clubmanner.com/resources/images/bg.jpg');
-            background-position: top;
-            background-size:cover;
-            height:50vw;
-            min-height: 800px;
-            min-width:100%;
-        }
-        .form {
-            position:absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-        }
-        table{
-            margin:auto;
-        }
-        td{
-            padding:0.35em 0;
-        }
-        label{
-            font-size: 18px;
-        }
+    body {
+        background-color: #000000;
+        margin-top: 50px;
+    }
+    
+    .signup {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .container {
+        background-image: url('http://clubmanner.com/resources/images/bg.jpg');
+        background-position: top;
+        background-size: cover;
+        height: 50vw;
+        min-height: 800px;
+        min-width: 100%;
+    }
+    
+    .logo {
+        background: url("http://clubmanner.com/resources/images/logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30px;
+        width: 221px;
+    }
+    
+    .form {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+    }
+    
+    table {
+        margin: auto;
+    }
+    
+    td {
+        padding: 0.35em 0;
+    }
+    
+    label {
+        font-size: 18px;
+    }
     </style>
 </head>
+
 <body>
     {% include "./emailnav.html" %}
     <div class="container">
-            <!--img class="signup" src=""-->
+        <!--img class="signup" src=""-->
         <div class="form">
             <form action="" method="post">
                 <table>
-                    {% csrf_token %}
-                    {{ form.as_table }}
-                    <tbody><tr><th><input class="btn btn-default" type="submit" value="SUBMIT"></th></tr></tbody>
+                    {% csrf_token %} {{ form.as_table }}
+                    <tbody>
+                        <tr>
+                            <th>
+                                <input class="btn btn-default" type="submit" value="SUBMIT">
+                            </th>
+                        </tr>
+                    </tbody>
                 </table>
             </form>
         </div>
     </div>
-
     <script src="http://clubmanner.com/resources/js/jquery-2.1.3.js"></script>
     <script src="http://clubmanner.com/resources/js/bootstrap.min.js"></script>
 </body>
+
 </html>
