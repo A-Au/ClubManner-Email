@@ -55,7 +55,10 @@ ROOT_URLCONF = 'clubmanneremail.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/ubuntu/ClubManner-Email/clubmanneremail/templates'],
+        'DIRS': [
+            '/home/ubuntu/ClubManner-Email/clubmanneremail/templates',
+            '/var/www/ssi'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
