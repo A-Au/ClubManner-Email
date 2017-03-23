@@ -66,13 +66,17 @@
         <!--img class="signup" src=""-->
         <div class="form">
             <form action="" method="post">
-                <table>
-                    {% csrf_token %}
-                    <tr>
-                        <th>{{ form }}</th>
-                        <th><input class="btn btn-default" type="submit" value="JOIN"></th>
-                    </tr>
-                </table>
+                {% csrf_token %} 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            {{ form }}
+                        </div>
+                        <div class="col-sm-4">
+                            <input class="btn btn-default" type="submit" value="JOIN">
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
