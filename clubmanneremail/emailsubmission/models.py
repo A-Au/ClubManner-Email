@@ -6,7 +6,6 @@ from django.core.validators import RegexValidator
 
 # Create your models here.
 class Emails(models.Model):
-    alphabetic = RegexValidator(r'^[a-zA-Z]*$', 'Only alphabetic characters are allowed.')
     email = models.EmailField(max_length=254, blank=False, null=False, unique=True)
 
     class Meta:
