@@ -6,7 +6,7 @@ from django.core.validators import RegexValidator
 
 # Create your models here.
 class Emails(models.Model):
-    email = models.EmailField(max_length=254, blank=False, null=False, unique=True)
+    email = models.EmailField(max_length=254, blank=False, null=False, unique=True, label='')
 
     class Meta:
         managed = True
@@ -14,7 +14,6 @@ class Emails(models.Model):
 
 
 class EmailsForm(ModelForm):
-    agree_term = forms.BooleanField(required=True, label='Agree to terms')
     class Meta:
         model = Emails
         fields = [ 'email' ]
