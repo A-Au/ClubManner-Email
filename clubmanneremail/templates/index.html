@@ -46,6 +46,8 @@
         color:white;
         text-align: center;
         width: 300px;
+    }
+    .form-bg {
         background-color: #a9a9a9;
     }
     .input-format {
@@ -77,13 +79,15 @@
     <div class="bg-set">
         <!--img class="signup" src=""-->
         <div class="form">
-            <form class="form-inline" action="" method="post">
-                {% csrf_token %} 
-                <div class="form-group">
-                    {{ form }}
-                    <input class="btn-lg btn-default btn-colour" type="submit" value="JOIN">
-                </div>
-            </form>
+            <div class="form-bg">
+                <form class="form-inline" action="" method="post">
+                    {% csrf_token %} 
+                    <div class="form-group">
+                        {{ form }}
+                        <input class="btn-lg btn-default btn-colour" type="submit" value="JOIN">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <script src="http://clubmanner.com/resources/js/jquery-2.1.3.js"></script>
