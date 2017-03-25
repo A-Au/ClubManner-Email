@@ -101,7 +101,7 @@ LOGGING = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'clubmanneremails',
+        'NAME': 'clubmanneremail',
         'USER': 'emailclient',
         'PASSWORD': 'samisahighroller',
         'HOST': 'localhost',
