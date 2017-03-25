@@ -85,9 +85,9 @@
                 <h2>Join the Club</h2>
                 <form class="form-inline" action="" method="post">
                     {% csrf_token %} 
-                    <div class="form-group">
+                    <div class="input-group">
                         {{ form }}
-                        <input class="btn-lg btn-default btn-colour" type="submit" value="JOIN">
+                        <span class="input-group-btn"><input class="btn-lg btn-default btn-colour" type="submit" value="JOIN"></span>
                     </div>
                 </form>
                 <p>Sign me up to receive emails on new upades and execlusive events.</p>

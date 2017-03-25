@@ -21,6 +21,6 @@ class EmailsForm(ModelForm):
             'email': '',
         }
         widgets = {
-            'email': forms.TextInput(attrs={'class':'input-lg input-format', 'placeholder': 'Email Address'})
+            'email': forms.TextInput(attrs={'class':'form-control input-lg input-format', 'placeholder': 'Email Address'})
         }
 
