@@ -17,10 +17,10 @@ def get_name(request):
             
             send_mail(
                 'THIS IS A TEST',
-                'FYI: SINCE WE HAVE YET TO LAUNCH, YOUR INFO WILL BE DELETED DAILY AS WE CONTINUE TO BUILD OUT OUR SYSTEM',
+                'Welcome to the club! We are aiming to push out the service by June. We will be looking for beta testers and stylists. Feel free to contact us for any questions at clubmannercanada@gmail.com.',
                 'clubmannercanada@gmail.com',
                 [request.POST.get('email')],
-                fail_silently=False,
+                fail_silently=True,
             )
             # process the data in form.cleaned_data as required
             # ...
