@@ -16,7 +16,7 @@ def get_name(request):
             form.save()
             
             send_mail(
-                'Thank you!',
+                'Welcome to ClubManner',
                 'Welcome to the club! We are aiming to push out the service by June. We will be looking for beta testers and stylists. Feel free to contact us for any questions at clubmannercanada@gmail.com.',
                 'clubmannercanada@gmail.com',
                 [request.POST.get('email')],
